@@ -1,23 +1,18 @@
 from typing import List
 
-from sorting_algorithms import copy_array, VALID_VALUES
+from sorting_algorithms import VALID_VALUES
 
 
-def insertion_sort(array: List[VALID_VALUES]) -> List[VALID_VALUES]:
+def insertion_sort(array: List[VALID_VALUES]) -> None:
     """
     Insertion sort algorithm.
     Time complexity - O(n^2).
     Space complexity - O(1).
+    Stability - Yes.
     :param array: Input array.
-    :return: New sorted array.
     """
-
-    output_array = copy_array(array)
-
-    for top in range(1, len(output_array)):
+    for top in range(1, len(array)):
         k = top
-        while k > 0 and output_array[k-1] > output_array[k]:
-            output_array[k], output_array[k-1] = output_array[k-1], output_array[k]
+        while k > 0 and array[k-1] > array[k]:
+            array[k], array[k-1] = array[k-1], array[k]
             k -= 1
-
-    return output_array
