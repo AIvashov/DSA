@@ -26,7 +26,7 @@ def check_sorted(array: List[VALID_VALUES], ascending: bool = True) -> bool:
     :return: Sorted or no sorted.
     """
     sign = 2 * int(ascending) - 1
-    for i in range(len(array) - 2):
+    for i in range(len(array) - 1):
         if sign * array[i] > sign * array[i+1]:
             return False
     return True
