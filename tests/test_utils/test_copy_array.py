@@ -1,5 +1,5 @@
-from .scenario import SCENARIO
-from sorting_algorithms import copy_array
+from tests.test_sorting_algorithms.scenario import SCENARIO
+from utils import copy_array
 
 
 def test_copy_array():

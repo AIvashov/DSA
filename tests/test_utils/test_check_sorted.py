@@ -1,5 +1,5 @@
-from .scenario import SCENARIO
-from sorting_algorithms import check_sorted
+from tests.test_sorting_algorithms.scenario import SCENARIO
+from utils import check_sorted
 
 
 def test_check_sorted():

@@ -1,5 +1,7 @@
 from .scenario import SCENARIO
-from sorting_algorithms import bubble_sort, copy_array
+
+from utils import copy_array
+from sorting_algorithms import bubble_sort
 
 
 def test_bubble_sort():

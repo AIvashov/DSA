@@ -1,5 +1,7 @@
 from .scenario import SCENARIO
-from sorting_algorithms import copy_array, merge_sort
+
+from utils import copy_array
+from sorting_algorithms import merge_sort
 
 
 def test_merge_sort():

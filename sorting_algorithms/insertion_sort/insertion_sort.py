@@ -1,6 +1,6 @@
 from typing import List
 
-from sorting_algorithms import VALID_VALUES
+from utils import VALID_VALUES
 
 
 def insertion_sort(array: List[VALID_VALUES]) -> None:

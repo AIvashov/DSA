@@ -1,5 +1,7 @@
 from .scenario import SCENARIO
-from sorting_algorithms import copy_array, selection_sort
+
+from utils import copy_array
+from sorting_algorithms import selection_sort
 
 
 def test_selection_sort():

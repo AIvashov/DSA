@@ -1,5 +1,7 @@
 from .scenario import SCENARIO
-from sorting_algorithms import insertion_sort, copy_array
+
+from utils import copy_array
+from sorting_algorithms import insertion_sort
 
 
 def test_insertion_sort():

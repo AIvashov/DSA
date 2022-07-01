@@ -1,5 +1,7 @@
 from .scenario import SCENARIO
-from sorting_algorithms import copy_array, quick_sort
+
+from utils import copy_array
+from sorting_algorithms import quick_sort
 
 
 def test_quick_sort():
